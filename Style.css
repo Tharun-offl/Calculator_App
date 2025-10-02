@@ -1,0 +1,116 @@
+.background {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.input {
+    width: 30%;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    padding-bottom: 20px;
+}
+
+.row button {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+    width: 60px;
+    border: solid 1.5px black;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.inp-box {
+    width: 350px;
+    margin-top: 10px;
+    height: 70px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 40px;
+    background: transparent;
+    padding: 5px;
+    box-shadow: inset 5px 5px 8px black,
+        5px 5px 8px rgba(0, 0, 0, .16);
+    text-align: right;
+    border: none;
+
+}
+
+.line button {
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    position: relative;
+    right: 100px;
+}
+
+#back {
+    position: relative;
+    left: 100px;
+}
+
+.line button:hover {
+    text-shadow: 3px 3px 10px black;
+}
+
+#history,
+#tri {
+    position: relative;
+    right: 100px;
+}
+
+#del {
+    position: relative;
+    left: 100px;
+}
+
+.column button,
+.replace button {
+    border-radius: 10px;
+    width: 80px;
+    height: 35px;
+    margin: 20px;
+    font-size: 20px;
+    border: solid 1.5px black;
+    opacity: 10px;
+    background: transparent;
+    cursor: pointer;
+
+}
+
+.row button:hover {
+    box-shadow: 5px 5px 5px black;
+    background: #008c80;
+}
+
+.column button:hover {
+    box-shadow: 5px 5px 5px black;
+    background: #008c80;
+}
+
+.replace button:hover {
+    box-shadow: 5px 5px 5px black;
+    background: #008c80;
+}
+
+.column {
+    display: none;
+}
+
+.replace {
+    display: none;
+}
+
+.history-box {
+    text-align: left;
+}
