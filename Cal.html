@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<center>
+
+    <body>
+        <video autoplay muted loop class="background">
+            <source src="video1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="input">
+            <input type="text" class="inp-box" placeholder="0" maxlength="100">
+            <div class="line">
+                <button onclick="history()" id="his">🌐</button>
+                <button onclick="tignomatric()" id="tig">🔣</button>
+                <button onclick="backspace()" id="back">⌫</button>
+            </div>
+
+
+            <div class="keys">
+                <div class="row">
+                    <button onclick="cleardisplay()">C</button>
+                    <button onclick="append('(')">(</button>
+                    <button onclick="append(')')">)</button>
+                    <button onclick="append('+')">+</button>
+                    <button onclick="append('7')">7</button>
+                    <button onclick="append('8')">8</button>
+                    <button onclick="append('9')">9</button>
+                    <button onclick="append('-')">−</button>
+                    <button onclick="append('4')">4</button>
+                    <button onclick="append('5')">5</button>
+                    <button onclick="append('6')">6</button>
+                    <button onclick="append('*')">x</button>
+                    <button onclick="append('1')">1</button>
+                    <button onclick="append('2')">2</button>
+                    <button onclick="append('3')">3</button>
+                    <button onclick="append('/')">÷</button>
+                    <button onclick="append('%')">%</button>
+                    <button onclick="append('0')">0</button>
+                    <button onclick="append('.')">.</button>
+                    <button onclick=" calculator()">=</button>
+                </div>
+                <div class="column">
+                    <button onclick="toggleReplaces()" id="rot">⇄</button>
+                    <button onclick="toggleRad()" id="angle-mode-btn">RAD</button>
+                    <button onclick="appendTrig('√(')">√</button>
+                    <button onclick="appendTrig('sin(')">sin</button>
+                    <button onclick="appendTrig('cos(')">cos</button>
+                    <button onclick="appendTrig('tan(')">tan</button>
+                    <button onclick="appendTrig('ln(')">ln</button>
+                    <button onclick="appendTrig('log(')">log</button>
+                    <button onclick="appendTrig('1/')">1/x</button>
+                    <button onclick="appendTrig('e^')">eˣ</button>
+                    <button onclick="appendTrig('^2')">x²</button>
+                    <button onclick="appendTrig('^')">xʸ</button>
+                    <button onclick="appendTrig('|')">|x|</button>
+                    <button onclick="appendTrig('π')">π</button>
+                    <button onclick="appendTrig('e')">e</button>
+                </div>
+
+                <div class="replace">
+                    <button onclick="toggleReplaces()" id="rote">⇄</button>
+                    <button onclick="toggleDeg()" id="angle-mode-btn-2">DEG</button>
+                    <button onclick="appendTrig('∛(')">∛</button>
+                    <button onclick="appendTrig('sin⁻¹(')">sin⁻¹</button>
+                    <button onclick="appendTrig('cos⁻¹(')">cos⁻¹</button>
+                    <button onclick="appendTrig('tan⁻¹(')">tan⁻¹</button>
+                    <button onclick="appendTrig('sinh(')">sinh</button>
+                    <button onclick="appendTrig('cosh(')">cosh</button>
+                    <button onclick="appendTrig('tanh(')">tanh</button>
+                    <button onclick="appendTrig('sinh⁻¹(')">sinh⁻¹</button>
+                    <button onclick="appendTrig('cosh⁻¹(')">cosh⁻¹</button>
+                    <button onclick="appendTrig('tanh⁻¹(')">tanh⁻¹</button>
+                    <button onclick="appendTrig('2^(')">2ˣ</button>
+                    <button onclick="appendTrig('^3(')">x³</button>
+                    <button onclick="appendTrig('!')">x!</button>
+                </div>
+
+            </div>
+        </div>
+        <script src="javascript.js"></script>
+    </body>
+</center>
+
+</html>
